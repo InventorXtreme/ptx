@@ -1,0 +1,15 @@
+o = ray origin (vector)
+d = ray direction (vector)
+c = center of sphere
+r = rad of sphere
+
+we are trying to find T
+where we can represent the ray as O + tD
+//start compute
+L = distance from O to C
+Tca = L dot D
+d = sqrt( L^2 - tca^2 )
+thc = sqrt(r^2 - d^2)
+
+t0 = tca - thc
+t1 = tca + thc
